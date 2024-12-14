@@ -1,0 +1,51 @@
+:root{
+    --main-color:#272B30;
+    --second-color:#27282B;
+}
+body{
+    background-color: var(--main-color);
+    font-family: "Comfortaa", cursive;
+}
+header img{
+    max-height: 30vh;
+    object-fit: cover;
+}
+nav{
+   margin-top: -30px; 
+   background-color: #3A497B;
+   font-size: 12px;
+   font-weight: 400;
+}
+.nav-item .nav-link{
+    color: #fff !important;
+}
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+   color: #09c !important;
+   transition: color 0.5s;
+}
+.games .card{
+    background-color: var(--main-color);
+    color: #fff;
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+    min-height: 330px;
+}
+.games .card:hover{
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+.card .card-text{
+    color: #919395;
+    font-size: 14px;
+}
+.card .card-title{
+    font-size: 13px;
+}
+.card .card-footer .badge{
+    background-color: #32383E;
+}
+.detail{
+    background-color: var(--second-color);
+    min-height: 100vh;
+}
